@@ -19,7 +19,7 @@ services:
       - ALLOWEDIPS=0.0.0.0/0,::/0
       - PERSISTENTKEEPALIVE_PEERS=all
     volumes:
-      - /patch/to/data/wireguard/appdata/config:/config
+      - ./wireguard/appdata/config:/config
       - /lib/modules:/lib/modules
     ports:
       - 51820:51820/udp
